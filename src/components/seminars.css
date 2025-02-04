@@ -1,0 +1,39 @@
+/* src/components/seminars.css */
+.light-theme {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark-theme {
+    background-color: black;
+    color: white;
+  }
+  
+  .seminar-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Создаем колонки с минимальной шириной 300px */
+    gap: 20px; /* Расстояние между элементами */
+    padding: 20px; /* Отступы вокруг списка */
+  }
+  
+  .seminar-item {
+    border: 1px solid #ccc; /* Обводка семинара */
+    border-radius: 8px; /* Закругление углов */
+    padding: 15px; /* Отступы внутри элемента */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
+    transition: transform 0.3s; /* Плавный переход при наведении */
+  }
+  
+  .seminar-item:hover {
+    transform: translateY(-5px); /* Поднятие элемента при наведении */
+  }
+  
+  .delete-button, .edit-button {
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .delete-button:hover, .edit-button:hover {
+    background-color: #f0f0f0; /* Измените цвет фона */
+    transform: scale(1.05); /* Увеличение кнопки при наведении */
+  }
+  

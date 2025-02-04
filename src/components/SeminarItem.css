@@ -1,0 +1,64 @@
+/* SeminarItem.css */
+
+.seminar-item {
+    display: flex; /* Используем flexbox для размещения изображения и деталей рядом */
+    border: 1px solid #ddd; /* Тонкая граница */
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Светло-серый фон для каждой карточки */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Лёгкая тень */
+  }
+  
+  .seminar-image {
+    width: 120px; /* Фиксированная ширина изображения */
+    margin-right: 15px;
+  }
+  
+  .seminar-image img {
+    width: 100%; /* Изображение занимает всю ширину контейнера */
+    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    border-radius: 5px;
+    display: block; /* Убираем отступ снизу у inline элементов */
+  }
+  
+  .seminar-details {
+    flex: 1; /* Занимает всё оставшееся место */
+  }
+  
+  .seminar-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .seminar-date {
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+  }
+  
+  .seminar-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .seminar-actions {
+    text-align: right; /* Выравниваем кнопки вправо */
+  }
+  
+  .seminar-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Синий цвет для кнопок */
+    color: #fff; /* Белый текст */
+    margin-left: 10px;
+    transition: background-color 0.2s ease; /* Плавное изменение цвета при наведении */
+  }
+  
+  .seminar-actions button:hover {
+    background-color: #0056b3; /* Более темный синий при наведении */
+  }
